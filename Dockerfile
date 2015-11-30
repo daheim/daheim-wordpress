@@ -17,7 +17,8 @@ RUN apt-get update && \
     rm -rf /app/wp-content/themes/* && \
     rm -rf /var/lib/apt/lists/* && \
     sed -i "s/AllowOverride None/AllowOverride All/g" /etc/apache2/apache2.conf && \
-    a2enmod rewrite
+    a2enmod rewrite && \
+    chown -R root:root /app
 
 RUN cd /app/wp-content/plugins && \
     curl -otmp.zip https://downloads.wordpress.org/plugin/siteorigin-panels.${SITEORIGIN_PANELS_VER}.zip && \
@@ -39,8 +40,7 @@ COPY run.sh /run.sh
 COPY daheim-google-analytics.php /app/wp-content/plugins/
 COPY daheim /app/wp-content/themes/daheim
 
-RUN chown -R root:root /app && \
-    chmod +x /run.sh
+RUN chmod +x /run.sh
 
 # Expose environment variables
 ENV DB_HOST **LinkMe**
