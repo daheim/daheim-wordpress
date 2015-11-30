@@ -37,7 +37,9 @@ RUN cd /app/wp-content/plugins && \
 COPY wp-config.php /app/wp-config.php
 COPY daheim /app/wp-content/themes/daheim
 COPY run.sh /run.sh
-RUN chmod +x /*.sh
+
+RUN chown -R root:root /app && \
+    chmod +x /run.sh
 
 # Expose environment variables
 ENV DB_HOST **LinkMe**
@@ -47,5 +49,4 @@ ENV DB_USER admin
 ENV DB_PASS **ChangeMe**
 
 EXPOSE 80
-VOLUME ["/app/wp-content/uploads"]
 CMD ["/run.sh"]
