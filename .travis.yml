@@ -1,0 +1,12 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+
+script:
+  - docker build -t egergo/daheim-wordpress:latest .
+  - docker tag egergo/daheim-wordpress:latest egergo/daheim-wordpress:commit-$(echo $TRAVIS_COMMIT | cut -c1-8)
+  - docker push egergo/daheim-wordpress
