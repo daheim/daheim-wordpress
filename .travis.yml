@@ -10,3 +10,7 @@ script:
   - docker build -t egergo/daheim-wordpress:latest .
   - docker tag egergo/daheim-wordpress:latest egergo/daheim-wordpress:commit-$(echo $TRAVIS_COMMIT | cut -c1-8)
   - docker push egergo/daheim-wordpress
+
+notifications:
+  slack:
+    secure: Cr3zXIXYvqht3HHfQ3ddleCjki8PpDk7DpPlPNiZvN4LQxGIYGrC1746LFiumfe6KGj3+mWQTdVtbMFEE9H5GRmPzfb40XgZYTXFIpxX/aAdZKFz0Wi3E1kclzVZ5WH6Sew/MVBDUmBg4yKozfS5XjAiPCJYQxki/7GYt74RqIKXdwNejF6iFaX/WXFvB7N6fOuPwAiyvBEwYOS8iVteSL0bCnfaO8j9mpVctGL3am7p+z/C9OUe4yvPLlr3oo+eOtFyymB2EZhO63Vmcnvmv+UqysO5CPdP8iL3QJTXbxvo1eUgRRxRdSZmXHi/kdR7oGv9ERSDtFdRpr5G92Cs+KFiWj+6nikHFYTVWpkkSyJ8xnDnFjZi3tzOzJX/yx31IIMqQJZFxQfuK0pGXwEkjLx9mYzFrvhTpCb1x7P5SUS/TUTodAf9C29jYrJwEyt7z/Y0oFJZY3Bz+VupgIglntKs4e/U2S1IwS8bTtpp++h4yCCPYKSDaXAqT4WIb4qWvhkVMlJkrg/TcyNSDUORc2aIJGWlBMAkWN8SWT0RjJaiJ21LlmjFGgsPrLXHRqP3WHs3BpHS1ABJSMVgdqVQEmaojiaKirWAGv4HVICGrAM//dg+AqLLFeoKcZGn5HtLe1wGLvmn/PnT5134Rxkli1xhkQLvGB8ZSJgkQDf+t+4=
