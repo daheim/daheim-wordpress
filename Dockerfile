@@ -35,8 +35,9 @@ RUN cd /app/wp-content/plugins && \
     rm tmp.zip
 
 COPY wp-config.php /app/wp-config.php
-COPY daheim /app/wp-content/themes/daheim
 COPY run.sh /run.sh
+COPY daheim-google-analytics.php /app/wp-content/plugins/
+COPY daheim /app/wp-content/themes/daheim
 
 RUN chown -R root:root /app && \
     chmod +x /run.sh
