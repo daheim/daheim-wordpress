@@ -61,4 +61,5 @@ fi
 touch /.mysql_db_created
 
 source /etc/apache2/envvars
+tail -qF -n 0 /var/log/apache2/* &
 exec apache2 -D FOREGROUND
