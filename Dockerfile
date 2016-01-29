@@ -6,6 +6,7 @@ ENV SITEORIGIN_PANELS_VER 2.2.1
 ENV SITEORIGIN_WIDGETS_VER 1.5.4
 ENV ARCADE_BASIC_VER 1.0.6
 ENV AZURE_STORAGE_VER 2.2
+ENV SHORTCODES_ULTIMATE_VER 4.9.9
 
 WORKDIR /
 RUN apt-get update && \
@@ -28,6 +29,9 @@ RUN cd /app/wp-content/plugins && \
     unzip tmp.zip && \
     rm tmp.zip && \
     curl -otmp.zip https://downloads.wordpress.org/plugin/windows-azure-storage.${AZURE_STORAGE_VER}.zip && \
+    unzip tmp.zip && \
+    rm tmp.zip && \
+    curl -otmp.zip https://downloads.wordpress.org/plugin/shortcodes-ultimate.${SHORTCODES_ULTIMATE_VER}.zip && \
     unzip tmp.zip && \
     rm tmp.zip && \
     cd /app/wp-content/themes && \
