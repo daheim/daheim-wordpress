@@ -1,82 +1,62 @@
 <?php
 /**
- * The front page template.
+ * Template Name: Hollow as a Mountain
  *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
- *
- * @since 1.0.0
+ * Description: A full width empty page template
  */
-get_header();
+?>
 
-global $paged;
-$bavotasan_theme_options = bavotasan_theme_options();
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" <?php language_attributes(); ?>><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" <?php language_attributes(); ?>><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" <?php language_attributes(); ?>><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" <?php language_attributes(); ?>><!--<![endif]-->
+<head>
+	<meta charset="<?php bloginfo('charset'); ?>">
+	<meta name="viewport" content="width=device-width">
+	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+	<!--[if IE]><script src="<?php echo BAVOTASAN_THEME_URL; ?>/library/js/html5.js"></script><![endif]-->
+	<?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
 
-if ( 2 > $paged ) {
-	// Display jumbo headline is the option is set
-	if ( is_active_sidebar( 'jumbo-headline' ) || ! empty( $bavotasan_theme_options['jumbo_headline_title'] ) ) {
-	?>
-	<div class="home-top">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<?php
-					if ( is_active_sidebar( 'jumbo-headline' ) ) {
-						dynamic_sidebar( 'jumbo-headline' );
-					} else {
-						?>
-						<div class="home-jumbotron jumbotron">
-							<h1><?php echo apply_filters( 'the_title', html_entity_decode( $bavotasan_theme_options['jumbo_headline_title'] ) ); ?></h1>
-							<p><?php echo wp_kses_post( html_entity_decode( $bavotasan_theme_options['jumbo_headline_text'] ) ); ?></p>
-						</div>
-						<?php
-					}
-					?>
+	<nav class="top">
+		<a class="logo" href="http://daheimapp.de"><span class="house">&#xf015;</span> Daheim</a>
+		<?php wp_nav_menu(array(
+			'theme_location' => 'header-menu',
+			'container' => ''
+		)); ?>
+	</nav>
+
+	<div class="cover">
+		<div class="photo"></div>
+		<div class="content">
+			<h1>Daheim ist eine Videotelefonie-Plattform für mobiles Lernen</h1>
+			<div>
+				<div class="signup">
+					<div>Daheim is a <strong>free</strong> service starting in early 2016. Sign up here to get the latest news.</div>
+					<form novalidate action="//daheimapp.us12.list-manage.com/subscribe/post?u=c4d83a63f2e01438e01ffb425&amp;id=8090515741" method="post" target="_blank">
+						<input novalidate class="input-email" name="EMAIL" type="email" spellcheck="false" placeholder="E-Mail-Adresse"/>
+						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c4d83a63f2e01438e01ffb425_8090515741" tabindex="-1" value=""></div>
+						<button class="button" type="submit" name="subscribe">Zum Newsletter anmelden</button>
+					</form>
 				</div>
 			</div>
 		</div>
 	</div>
-	<?php
-	}
-}
-if ( 'page' == get_option('show_on_front') ) {
-	include( get_page_template() );
-} else {
-?>
-	<div class="container">
-		<div class="row">
-			<div id="primary" <?php bavotasan_primary_attr(); ?>>
-                <?php
-				if ( have_posts() ) {
-					while ( have_posts() ) : the_post();
-						get_template_part( 'content', get_post_format() );
-					endwhile;
 
-					bavotasan_pagination();
-				} else {
-					if ( current_user_can( 'edit_posts' ) ) {
-						// Show a different message to a logged-in user who can add posts.
-						?>
-						<article id="post-0" class="post no-results not-found">
-							<h1 class="entry-title"><?php _e( 'Nothing Found', 'arcade' ); ?></h1>
+	<div id="page">
 
-							<div class="entry-content description clearfix">
-								<p><?php printf( __( 'Ready to publish your first post? <a href="%s">Get started here</a>.', 'arcade' ), admin_url( 'post-new.php' ) ); ?></p>
-							</div><!-- .entry-content -->
-						</article>
-						<?php
-					} else {
-						get_template_part( 'content', 'none' );
-					} // end current_user_can() check
-				}
-				?>
-			</div><!-- #primary.c8 -->
-			<?php get_sidebar(); ?>
-		</div>
-	</div>
+
+		<main>
 
 <?php
+
+while (have_posts()) {
+	the_post();
+	the_content();
 }
-get_footer(); ?>
+
+?>
+
+<?php get_footer(); ?>
