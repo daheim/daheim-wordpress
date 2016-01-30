@@ -3,8 +3,13 @@
 add_filter('show_admin_bar', '__return_false');
 
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
+add_action('init', 'register_menues');
+
 add_shortcode('dhm_feature', 'dhm_feature_func');
 
+function register_menues() {
+  register_nav_menu('header-menu', __('Header Menu'));
+}
 
 function theme_enqueue_styles() {
 	wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
