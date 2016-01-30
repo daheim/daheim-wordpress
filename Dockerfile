@@ -43,6 +43,7 @@ RUN rm -rf /etc/apache2/sites-enabled/000-default.conf
 COPY wordpress.conf /etc/apache2/sites-enabled/
 
 COPY wp-config.php /app/wp-config.php
+COPY .htaccess /app/
 COPY run.sh /run.sh
 COPY daheim-google-analytics.php /app/wp-content/plugins/
 COPY daheim /app/wp-content/themes/daheim
