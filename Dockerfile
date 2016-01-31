@@ -49,6 +49,9 @@ COPY daheim-google-analytics.php /app/wp-content/plugins/
 COPY daheim /app/wp-content/themes/daheim
 
 RUN chmod +x /run.sh
+RUN ln -sf /dev/stderr /var/log/apache2/error.log
+RUN mkdir /app/wp-content/uploads && \
+    chown -R www-data:www-data /app/wp-content/uploads
 
 # Expose environment variables
 ENV DB_HOST **LinkMe**
