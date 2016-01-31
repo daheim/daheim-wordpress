@@ -31,10 +31,10 @@
 	<div class="cover">
 		<div class="photo"></div>
 		<div class="content">
-			<h1>Daheim ist eine Videotelefonie-Plattform für mobiles Lernen</h1>
+			<h1><?php echo get_theme_mod('punchline') ?></h1>
 			<div>
 				<div class="signup">
-					<div>Daheim is a <strong>free</strong> service starting in early 2016. Sign up here to get the latest news.</div>
+					<div><?php echo get_theme_mod('newsletter_caption') ?></div>
 					<form novalidate action="//daheimapp.us12.list-manage.com/subscribe/post?u=c4d83a63f2e01438e01ffb425&amp;id=8090515741" method="post" target="_blank">
 						<input novalidate class="input-email" name="EMAIL" type="email" spellcheck="false" placeholder="E-Mail-Adresse"/>
 						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c4d83a63f2e01438e01ffb425_8090515741" tabindex="-1" value=""></div>
