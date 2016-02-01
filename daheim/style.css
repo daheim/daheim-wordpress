@@ -11,7 +11,7 @@
  Tags:         black, blue, gray, silver, white, light, one-column, two-columns, left-sidebar, right-sidebar, fluid-layout, responsive-layout, buddypress, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 */
 
-@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower|Lato:400,700,900);
 
 * {
 	-ms-box-sizing: border-box;
@@ -30,6 +30,19 @@ body, html {
 	-webkit-font-smoothing: antialiased;
 }
 
+.maxwidth {
+	max-width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	text-align: center;
+	font-family: Lato, sans-serif;
+	font-weight: 700;
+	margin-bottom: 40px;
+}
+
 /**
  * Nav
  */
@@ -40,7 +53,7 @@ nav.top .logo {
 	line-height: 65px;
 	font-size: 36px;
 	color: white;
-	font-weight: 1600;
+	font-weight: 400;
 	text-decoration: none;
 	display: inline-block;
 	margin-left: 20px;
@@ -231,3 +244,59 @@ nav.top ul a:hover {
 }
 
 
+/**
+ * Awesome Persons
+ */
+
+.awesome-person {
+	vertical-align: top;
+	width: 100%;
+	max-width: 240px;
+	margin: 0 auto;
+}
+
+.awesome-person .picture {
+	width: 100%;
+	padding: 0 30px;
+}
+
+.awesome-person .picture > div {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 50%;
+	background-size: cover;
+	background-position: top;
+}
+
+.awesome-person .picture > div:before {
+	content: '';
+	padding: 50% 0;
+	display: inline-block;
+	margin-bottom: -5px;
+}
+
+.awesome-person h2 {
+	margin-top: 10px;
+	margin-bottom: 0;
+	font-weight: 700;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	line-height: 22px;
+}
+
+.awesome-person h3 {
+	margin-top: 0;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	line-height: 22px;
+}
+
+.awesome-person .quote {
+	font-family: 'Indie Flower', 'Lato', sans-serif;
+	font-size: 14px;
+	text-align: center;
+	padding: 0 14px;
+}

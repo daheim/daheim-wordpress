@@ -7,6 +7,7 @@ add_action('init', 'register_menues');
 add_action('customize_register', 'dhm_customize_register');
 
 add_shortcode('dhm_feature', 'dhm_feature_func');
+add_shortcode('dhm_awesome_person', 'dhm_shortcode_awesome_person');
 
 function register_menues() {
   register_nav_menu('header-menu', __('Header Menu'));
@@ -29,6 +30,26 @@ function dhm_feature_func($atts, $content = null) {
 				<div><img style="width: 300px;" src="' . esc_attr($a['img']) . '" alt="" /></div>
 				<div>' . do_shortcode($content) . '</div>
 			</section>
+		</div>
+	';
+}
+
+function dhm_shortcode_awesome_person($atts) {
+	$a = shortcode_atts(array(
+		'name' => 'Name',
+		'title' => 'Title',
+		'picture' => 'https://do512blog.files.wordpress.com/2011/09/pirate_tweet.jpg',
+		'quote' => 'Daheim 4TW',
+	), $atts );
+
+	return '
+		<div class="awesome-person">
+			<div class="picture">
+				<div style="background-image: url(' . esc_attr($a['picture']) . ')"></div>
+			</div>
+			<h2 class="name">' . $a['name'] . '</h2>
+			<h3 class="title">' . $a['title'] . '</h3>
+			<p class="quote">' . $a['quote'] . '</p>
 		</div>
 	';
 }
