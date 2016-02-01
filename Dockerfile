@@ -24,20 +24,12 @@ RUN cd /tmp && \
     chown -R www-data:www-data /app/wp-content/uploads && \
     ln -sf /dev/stderr /var/log/apache2/error.log
 
-ENV SITEORIGIN_PANELS_VER=2.2.2 \
-    SITEORIGIN_WIDGETS_VER=1.5.6 \
-    ARCADE_BASIC_VER=1.0.6 \
+ENV ARCADE_BASIC_VER=1.0.6 \
     AZURE_STORAGE_VER=2.2 \
     SHORTCODES_ULTIMATE_VER=4.9.9 \
     SVG_SUPPORT_VER=2.2.2
 
 RUN cd /app/wp-content/plugins && \
-    curl -otmp.zip https://downloads.wordpress.org/plugin/siteorigin-panels.${SITEORIGIN_PANELS_VER}.zip && \
-    unzip tmp.zip && \
-    rm tmp.zip && \
-    curl -otmp.zip https://downloads.wordpress.org/plugin/so-widgets-bundle.${SITEORIGIN_WIDGETS_VER}.zip && \
-    unzip tmp.zip && \
-    rm tmp.zip && \
     curl -otmp.zip https://downloads.wordpress.org/plugin/windows-azure-storage.${AZURE_STORAGE_VER}.zip && \
     unzip tmp.zip && \
     rm tmp.zip && \
