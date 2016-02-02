@@ -118,7 +118,7 @@ nav.top ul a:hover {
 	top: 0;
 	height: 600px;
 	background-size: cover;
-	background-image: url(https://daheim.blob.core.windows.net/wordpress/2015/11/9537775212_325b45c5c1_k.jpg),url(https://daheim.blob.core.windows.net/wordpress/daheim_hero@tiny.jpg);
+	background-image: url(https://assets.daheimapp.de/media/daheim_hero.jpg),url(https://assets.daheimapp.de/media/daheim_hero@tiny.jpg);
 	z-index: -100;
 }
 
