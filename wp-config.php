@@ -14,6 +14,17 @@
  * @package WordPress
  */
 
+if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false) {
+	$_SERVER['HTTPS']='on';
+}
+
+if (getenv('WP_HOME')) {
+	define('WP_HOME', getenv('WP_HOME'));
+}
+if (getenv('WP_SITEURL')) {
+	define('WP_SITEURL', getenv('WP_SITEURL'));
+}
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', getenv('DB_NAME'));
