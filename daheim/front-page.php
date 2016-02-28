@@ -33,13 +33,11 @@
 		<div class="content">
 			<h1><?php echo get_theme_mod('punchline') ?></h1>
 			<div>
-				<div class="signup">
+				<form class="signup" novalidate action="//daheimapp.us12.list-manage.com/subscribe/post?u=c4d83a63f2e01438e01ffb425&amp;id=8090515741" method="post" target="_blank">
 					<div><?php echo get_theme_mod('newsletter_caption') ?></div>
-					<form novalidate action="//daheimapp.us12.list-manage.com/subscribe/post?u=c4d83a63f2e01438e01ffb425&amp;id=8090515741" method="post" target="_blank">
-						<input novalidate class="input-email" name="EMAIL" type="email" spellcheck="false" placeholder="E-Mail-Adresse"/>
-						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c4d83a63f2e01438e01ffb425_8090515741" tabindex="-1" value=""></div>
-						<button class="button" type="submit" name="subscribe">Zum Newsletter anmelden</button>
-					</form>
+					<input novalidate class="input-email" name="EMAIL" type="email" spellcheck="false" placeholder="E-Mail-Adresse"/>
+					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c4d83a63f2e01438e01ffb425_8090515741" tabindex="-1" value=""></div>
+					<button class="button" type="submit" name="subscribe">Zum Newsletter anmelden</button>
 				</div>
 			</div>
 		</div>
