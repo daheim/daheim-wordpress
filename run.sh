@@ -60,5 +60,15 @@ fi
 
 touch /.mysql_db_created
 
+if [[ -v NEW_RELIC_LICENSE_KEY ]]; then
+    rm -f /etc/php5/apache2/conf.d/newrelic.ini
+    # echo "extension = \"newrelic.so\"" >> /etc/php5/apache2/conf.d/newrelic.ini
+    echo "newrelic.license=$NEW_RELIC_LICENSE_KEY" >> /etc/php5/apache2/conf.d/newrelic.ini
+    echo "newrelic.logfile=/dev/stdout" >> /etc/php5/apache2/conf.d/newrelic.ini
+    echo "newrelic.appname=${NEW_RELIC_APP_NAME:-daheim-wordpress}" >> /etc/php5/apache2/conf.d/newrelic.ini
+    echo "newrelic.daemon.logfile=/dev/stdout" >> /etc/php5/apache2/conf.d/newrelic.ini
+    echo "newrelic.daemon.logfile=/dev/stdout" >> /etc/php5/apache2/conf.d/newrelic.ini
+fi
+
 source /etc/apache2/envvars
 exec apache2 -D FOREGROUND

@@ -9,8 +9,11 @@ ENV WORDPRESS_VER=4.4.1 \
     DB_PASS="**ChangeMe**"
 
 RUN cd /tmp && \
+    curl -s https://download.newrelic.com/548C16BF.gpg | apt-key add - && \
+    echo "deb http://apt.newrelic.com/debian/ newrelic non-free" > /etc/apt/sources.list.d/newrelic.list && \
     apt-get update && \
-    apt-get -yq install mysql-client curl unzip && \
+    apt-get -yq install mysql-client curl unzip newrelic-php5 && \
+    newrelic-install install && \
     rm -rf /app && \
     curl -0L http://wordpress.org/wordpress-${WORDPRESS_VER}.tar.gz | tar zxv && \
     mv wordpress /app && \
