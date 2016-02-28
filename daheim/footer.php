@@ -13,7 +13,7 @@
 		<div id="footer-content" class="container">
 			<div class="row">
 				<div class="copyright col-lg-12">
-					<span class="pull-left"><?php printf( __( 'Copyright &copy; %s %s. All Rights Reserved.', 'arcade' ), date( 'Y' ), ' <a href="' . home_url() . '">Daheim UG (Haftungsbeschränkt)</a>' ); ?></span>
+					<span class="pull-left"><?php printf( __( 'Copyright &copy; %s %s. All Rights Reserved.', 'arcade' ), date( 'Y' ), ' <a href="' . home_url() . '">Daheim gemeinnützige UG (haftungsbeschränkt)</a>' ); ?></span>
 				</div><!-- .col-lg-12 -->
 			</div><!-- .row -->
 		</div><!-- #footer-content.container -->
