@@ -1,7 +1,7 @@
 FROM tutum/apache-php:latest
 MAINTAINER Gergo Ertli <egergo@gmail.com>
 
-ENV WORDPRESS_VER=4.4.1 \
+ENV WORDPRESS_VER=4.5 \
     DB_HOST="**LinkMe**" \
     DB_PORT="**LinkMe**" \
     DB_NAME=wordpress \
@@ -27,8 +27,8 @@ RUN cd /tmp && \
     chown -R www-data:www-data /app/wp-content/uploads && \
     ln -sf /dev/stderr /var/log/apache2/error.log
 
-ENV ARCADE_BASIC_VER=1.0.6 \
-    AZURE_STORAGE_VER=2.2 \
+ENV ARCADE_BASIC_VER=1.0.7 \
+    AZURE_STORAGE_VER=3.0.1 \
     SHORTCODES_ULTIMATE_VER=4.9.9 \
     SVG_SUPPORT_VER=2.2.2
 
