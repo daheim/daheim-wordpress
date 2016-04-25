@@ -39,13 +39,13 @@
         </div>
         <div style="flex: 1 1 0px"></div>
         <div class="smallmenu" style="flex: 0 0 auto; font-weight: 700; font-size: 12px; margin-top: 10px;">
-          <a href="/en">English</a>
+          <a href="/en/">English</a>
           <span class="separat">|</span>
-          <a href="/press">Presse</a>
+          <a href="/press/">Presse</a>
           <span class="separat">|</span>
-          <a href="/contact">Kontakt</a>
+          <a href="/contact/">Kontakt</a>
           <span class="separat">|</span>
-          <a href="/newsletter">Newsletter</a>
+          <a href="/newsletter/">Newsletter</a>
         </div>
 
       </div>
@@ -53,10 +53,10 @@
     </div>
 
     <div class="jumbomenu" style="max-width: 960px; margin: 0 auto; display: flex">
-      <a href="/idea">Idee</a>
-      <a href="/about">Über uns</a>
-      <a href="/faq">Fragen?</a>
-      <a href="/jobs">Mitmachen</a>
+      <a href="/idea/">Idee</a>
+      <a href="/about/">Über uns</a>
+      <a href="/faq/">Fragen?</a>
+      <a href="/jobs/">Mitmachen</a>
     </div>
   </div>
 
