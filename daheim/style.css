@@ -28,6 +28,7 @@ body, html {
 	color: #4A4A4A;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
+	height: 100%;
 }
 
 .maxwidth {
@@ -65,7 +66,7 @@ nav.top .logo .house {
 }
 
 nav.top {
-	position: absolute;
+	/*position: absolute;*/
 	top: 0;
 	width: 100%;
 	height: 65px;
@@ -318,3 +319,159 @@ nav.top ul a:hover {
 	text-align: center;
 	padding: 0 14px;
 }
+
+
+
+
+
+
+.head2 {
+	border-bottom: solid 1px white;
+	background: #EEE;
+}
+
+.jumbomenu {
+	color: #EEE;
+}
+
+.jumbomenu > a {
+	display: inline-block;
+	flex: 1 1 200px;
+	margin: 0 2px;
+	/*background: #61a534;*/
+	background: #d9534f;
+	padding: 6px;
+	font-size: 20px;
+	font-weight: 900;
+	text-align: center;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-top: solid 2px darkslateblue;
+	/*text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);*/
+	color: inherit;
+}
+
+.jumbomenu > a:hover, .jumbomenu > a:focus {
+	color: inherit;
+	text-decoration: none;
+	background-color: #A72925;
+}
+
+.smallmenu {
+	/*color: #44841A;*/
+	color: #d9534f;
+}
+
+.smallmenu a {
+	color: inherit;
+}
+
+.smallmenu a:hover, .smallmenu a:focus {
+	color: #A72925;
+	text-decoration: none;
+}
+
+.head2 {
+	/*color: #d9534f;*/
+	color: black;
+}
+
+.head2 .logo {
+	font-family: 'Megrim', cursive;
+	line-height: 65px;
+	font-size: 36px;
+	/*color: black;*/
+	font-weight: 400;
+	text-decoration: none;
+	color: inherit;
+}
+
+.head2 .logo .house {
+	font: normal normal normal 36px/1 FontAwesome;
+}
+
+.separat {
+	margin: 0 6px;
+}
+
+
+.cover2 {
+	height: 148px;
+  position: relative;
+}
+
+.cover2 .photo {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-size: cover;
+  background-image: url(https://assets.daheimapp.de/media/daheim_hero.jpg),url(https://assets.daheimapp.de/media/daheim_hero@tiny.jpg);
+  opacity: 0.9;
+	/*-webkit-filter: grayscale(20%) blur(1px);*/
+	-webkit-filter: grayscale(20%) sepia(40%) brightness(90%);
+	filter: grayscale(20%) sepia(40%) brightness(90%);
+	z-index: -10;
+}
+
+body {
+	background-color: #EEE;
+}
+
+.cover2 .title {
+	color: rgba(255, 255, 255, 1);
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 10px;
+	/*text-shadow: 0 0 2px rgba(0,0,0,.3);*/
+	text-shadow: 0 0 3px rgba(0,0,0,0.9);
+	margin-bottom: 30px;
+}
+
+body.home .cover2 .title {
+	/*font-size: 40px;*/
+	font-size: 5vmin;
+}
+
+body.home .cover2 {
+	/*height: 60%;*/
+	height: 60vmin;
+	/*min-height: 300px;*/
+}
+
+article {
+	margin: 30px;
+	padding: 0;
+	border: none;
+	min-height: 300px;
+}
+
+#page {
+	max-width: 960px;
+	background: rgba(255, 255, 255, 1);
+	margin: 0 auto;
+	margin-top: -48px;
+	border: solid 1px #DDD;
+}
+
+@media only screen and (max-width: 650px) {
+	.redenlernenleben {
+		display: none;
+	}
+
+	.jumbomenu > a {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.logotext {
+		display: none;
+	}
+}
+
+
