@@ -16,6 +16,9 @@
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width">
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-571dff17fe0b6534"></script>
+
   <!--[if IE]><script src="<?php echo BAVOTASAN_THEME_URL; ?>/library/js/html5.js"></script><![endif]-->
   <?php wp_head(); ?>
 </head>
