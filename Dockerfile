@@ -53,11 +53,13 @@ COPY wordpress.conf \
      wp-config.php \
      run.sh \
      daheim-google-analytics.php \
+     .htaccess \
      /tmp/
 
 RUN rm -rf /etc/apache2/sites-enabled/000-default.conf && \
     mv /tmp/wordpress.conf /etc/apache2/sites-enabled/ && \
     mv /tmp/wp-config.php /app/ && \
+    mv /tmp/.htaccess /app/ && \
     mv /tmp/run.sh / && \
     mv /tmp/daheim-google-analytics.php /app/wp-content/plugins/ && \
     chmod +x /run.sh
