@@ -256,10 +256,10 @@ nav.top ul a:hover {
 }
 
 .feature p {
-	line-height: 26px;
-	font-size: 17px;
+	line-height: 150%;
+	font-size: 16px;
 	opacity: .75;
-	color: #4A4A4A;
+	color: black;
 }
 
 
