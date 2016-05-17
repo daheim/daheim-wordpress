@@ -30,7 +30,8 @@ RUN cd /tmp && \
 ENV ARCADE_BASIC_VER=1.0.7 \
     AZURE_STORAGE_VER=3.0.1 \
     SHORTCODES_ULTIMATE_VER=4.9.9 \
-    SVG_SUPPORT_VER=2.2.3.2
+    SVG_SUPPORT_VER=2.2.3.2 \
+    WP_MAIL_SMTP_VER=0.9.5
 
 RUN cd /app/wp-content/plugins && \
     curl -otmp.zip https://downloads.wordpress.org/plugin/windows-azure-storage.${AZURE_STORAGE_VER}.zip && \
@@ -40,6 +41,9 @@ RUN cd /app/wp-content/plugins && \
     unzip tmp.zip && \
     rm tmp.zip && \
     curl -otmp.zip https://downloads.wordpress.org/plugin/svg-support.${SVG_SUPPORT_VER}.zip && \
+    unzip tmp.zip && \
+    rm tmp.zip && \
+    curl -otmp.zip https://downloads.wordpress.org/plugin/wp-mail-smtp.${WP_MAIL_SMTP_VER}.zip && \
     unzip tmp.zip && \
     rm tmp.zip && \
 
