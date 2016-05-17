@@ -23,7 +23,7 @@
 body, html {
 	margin: 0;
 	padding: 0;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', sans-serif !important;
 	font-size: 16px;
 	color: #4A4A4A;
 	-moz-osx-font-smoothing: grayscale;
