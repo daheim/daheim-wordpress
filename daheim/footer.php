@@ -14,10 +14,11 @@
 						<div style="flex: 1 1 200px">
 							<h3 style="font-size: 16px; color: inherit; margin-top: 8px">Impressum</h3>
 							<div>
-								Daheim gUG (haftungsbeschränkt)<br />
+								<p>Daheim gUG (haftungsbeschränkt)<br />
 								c/o Social Impact Lab Duisburg<br />
 								Franz-Haniel-Platz 1<br />
-								47119 Duisburg<br />
+								47119 Duisburg<br /></p>
+								<p><a href="/impressum/">Impressum</a></p>
 							</div>
 						</div>
 						<div style="flex: 1 1 200px">
