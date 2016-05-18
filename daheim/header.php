@@ -42,7 +42,7 @@
         </div>
         <div style="flex: 1 1 0px"></div>
         <div class="smallmenu" style="flex: 0 0 auto; font-weight: 700; font-size: 12px; margin-top: 10px;">
-          <a href="/en/">English</a>
+          <a href="/international/">International</a>
           <span class="separat">|</span>
           <a href="/press/">Presse</a>
           <span class="separat">|</span>
