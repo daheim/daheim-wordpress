@@ -15,15 +15,17 @@
 							<h3 style="font-size: 16px; color: inherit; margin-top: 0">Impressum</h3>
 							<div>
 								Daheim gUG (haftungsbeschränkt)<br />
-								Kotthaushang 32<br />
-								45239 Essen<br />
+								c/o Social Impact Lab Duisburg<br />
+								Franz-Haniel-Platz 1<br />
+								47119 Duisburg<br />
 							</div>
 						</div>
 						<div style="flex: 1 1 200px">
 							<h3 style="font-size: 16px; color: inherit; margin-top: 0">Kontakt</h3>
 							<div>
 								Geschäfstführer: Madita Best<br />
-								Email: hallo@daheimapp.de
+								Tel: +49 201 6472 9928<br />
+								Email: <a href="mailto:hallo@daheimapp.de" target="_blank">hallo@daheimapp.de</a>
 							</div>
 						</div>
 						<div style="flex: 1 1 200px">
