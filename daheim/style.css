@@ -318,7 +318,7 @@ nav.top ul a:hover {
 }
 
 .awesome-person .quote::after {
-	content: "„";
+	content: "“";
 }
 
 .awesome-person .quote {
