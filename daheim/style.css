@@ -347,14 +347,17 @@ nav.top ul a:hover {
 	flex: 1 1 200px;
 	margin: 0 2px;
 	/*background: #61a534;*/
-	background: #d9534f;
+	/*background: #d9534f;*/
+	/* Tanja's extension */
+	background: rgba(230, 27, 120, 1);
 	padding: 6px;
 	font-size: 20px;
 	font-weight: 900;
 	text-align: center;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
-	border-top: solid 2px darkslateblue;
+	/* Tanja's extension */
+	/*border-top: solid 2px darkslateblue;*/
 	/*text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);*/
 	color: inherit;
 }
@@ -362,12 +365,14 @@ nav.top ul a:hover {
 .jumbomenu > a:hover, .jumbomenu > a:focus {
 	color: inherit;
 	text-decoration: none;
-	background-color: #A72925;
+	/*background-color: #A72925;*/
 }
 
 .smallmenu {
 	/*color: #44841A;*/
-	color: #d9534f;
+	/*color: #d9534f;*/
+	/* Tanja's extension */
+	color: rgba(230, 27, 120, 1);
 }
 
 .smallmenu a {
