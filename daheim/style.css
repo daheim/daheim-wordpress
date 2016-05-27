@@ -449,6 +449,9 @@ body.home .cover2 {
 	/*height: 60%;*/
 	height: 60vmin;
 	/*min-height: 300px;*/
+
+	/* Tanja's extension */
+	display: none !important;
 }
 
 article {
@@ -464,6 +467,17 @@ article {
 	margin: 0 auto;
 	margin-top: -48px;
 	border: solid 1px #DDD;
+}
+
+/* Tanja's extension */
+body.home #page {
+	margin-top: 0;
+}
+
+
+/* Tanja's extension */
+body.home .head2 {
+	border-bottom: 0;
 }
 
 @media only screen and (max-width: 650px) {
