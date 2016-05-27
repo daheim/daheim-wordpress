@@ -31,14 +31,13 @@
     <div style="max-width: 960px; margin: 0 auto; display: flex">
 
       <div style="flex: 0 0 auto; align-self: center;">
-        <a class="logo" href="/"><span class="house">&#xf015;</span><span class="logotext"> Daheim</span></a>
-        <span class="redenlernenleben">Reden. Lernen. Leben.</span>
+        <a class="logo" href="/"><img src="http://assets.daheimapp.de/media/daheim_logo_rll.png" style="height: 46px; margin-left: 10px" /></a>
       </div>
       <div style="flex: 1 1 auto;"></div>
       <div style="flex: 0 0 auto; margin: 5px; display: flex; flex-direction: column;">
         <div style="flex: 0 0 auto; text-align: right; margin-top: 4px;">
-          <a href="https://app.daheimapp.de/" style="display: inline-block; padding: 6px 16px; font-size: 12px; color: darkslateblue; font-weight: 700">Anmelden</a>
-          <a href="https://app.daheimapp.de/auth/register" style="display: inline-block; background: darkslateblue; padding: 6px 16px; font-size: 12px; color: white; font-weight: 700">Registrieren</a>
+          <a href="https://app.daheimapp.de/" style="display: inline-block; padding: 6px 16px; font-size: 12px; color: rgba(92, 185, 144, 1); font-weight: 700">Anmelden</a>
+          <a href="https://app.daheimapp.de/auth/register" style="display: inline-block; background: rgba(92, 185, 144, 1); padding: 6px 16px; font-size: 12px; color: white; font-weight: 700">Registrieren</a>
         </div>
         <div style="flex: 1 1 0px"></div>
         <div class="smallmenu" style="flex: 0 0 auto; font-weight: 700; font-size: 12px; margin-top: 10px;">
