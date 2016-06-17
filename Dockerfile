@@ -25,7 +25,8 @@ RUN cd /tmp && \
     chown -R root:root /app && \
     mkdir /app/wp-content/uploads && \
     chown -R www-data:www-data /app/wp-content/uploads && \
-    ln -sf /dev/stderr /var/log/apache2/error.log
+    ln -sf /dev/stderr /var/log/apache2/error.log && \
+    ln -sf /dev/stderr /app/wp-content/debug.log
 
 ENV ARCADE_BASIC_VER=1.0.7 \
     AZURE_STORAGE_VER=3.0.1 \
