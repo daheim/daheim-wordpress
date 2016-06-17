@@ -89,7 +89,11 @@ define('WPLANG', '');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', false);
+$debug = getenv('WP_DEBUG') == '1';
+define('WP_DEBUG', $debug);
+define('WP_DEBUG_LOG', $debug);
+define('SAVEQUERIES', $debug);
+
 
 /* That's all, stop editing! Happy blogging. */
 
