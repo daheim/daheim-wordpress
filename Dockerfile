@@ -62,6 +62,7 @@ COPY wordpress.conf \
      wp-config.php \
      run.sh \
      daheim-google-analytics.php \
+     daheim-image-url.php \
      .htaccess \
      /tmp/
 
@@ -71,4 +72,5 @@ RUN rm -rf /etc/apache2/sites-enabled/000-default.conf && \
     mv /tmp/.htaccess /app/ && \
     mv /tmp/run.sh / && \
     mv /tmp/daheim-google-analytics.php /app/wp-content/plugins/ && \
+    mv /tmp/daheim-image-url.php /app/wp-content/plugins/ && \
     chmod +x /run.sh
