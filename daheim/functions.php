@@ -1,7 +1,5 @@
 <?php
 
-add_filter('show_admin_bar', '__return_false');
-
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 add_action('init', 'register_menues');
 add_action('customize_register', 'dhm_customize_register');
