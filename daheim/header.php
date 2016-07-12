@@ -36,7 +36,7 @@
       <div style="flex: 1 1 auto;"></div>
       <div style="flex: 0 0 auto; margin: 5px; display: flex; flex-direction: column;">
         <div style="flex: 0 0 auto; text-align: right; margin-top: 4px;">
-          <a href="https://app.daheimapp.de/" style="display: inline-block; padding: 6px 16px; font-size: 12px; color: rgba(92, 185, 144, 1); font-weight: 700">Anmelden</a>
+          <a href="https://app.daheimapp.de/" style="display: inline-block; padding: 6px 16px; font-size: 12px; color: rgba(92, 185, 144, 1); font-weight: 700">Einloggen</a>
           <a href="https://app.daheimapp.de/auth/register" style="display: inline-block; background: rgba(92, 185, 144, 1); padding: 6px 16px; font-size: 12px; color: white; font-weight: 700">Registrieren</a>
         </div>
         <div style="flex: 1 1 0px"></div>

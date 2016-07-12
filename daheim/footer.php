@@ -24,9 +24,9 @@
 						<div style="flex: 1 1 200px">
 							<h3 style="font-size: 16px; color: inherit; margin-top: 8px">Kontakt</h3>
 							<div>
-								<p>Geschäfstführer: Madita Best<br />
+								<p>Geschäfstführung: Madita Best<br />
 								Tel: +49 201 6472 9928<br />
-								Email: <a href="mailto:hallo@daheimapp.de" target="_blank">hallo@daheimapp.de</a></p>
+								Email: <a href="mailto:hallo@willkommen-daheim.org" target="_blank">hallo@willkommen-daheim.org</a></p>
 							  <p><a href="/agb/">AGB</a> | <a href="/privacy/">Datenschutz</a></p>
 							</div>
 						</div>
