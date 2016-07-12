@@ -31,7 +31,7 @@
     <div style="max-width: 960px; margin: 0 auto; display: flex">
 
       <div style="flex: 0 0 auto; align-self: center;">
-        <a class="logo" href="/"><img src="http://assets.daheimapp.de/media/daheim_logo_rll.png" style="height: 46px; margin-left: 10px" /></a>
+        <a class="logo" href="/"><img src="https://assets.daheimapp.de/media/daheim_logo_rll.png" style="height: 46px; margin-left: 10px" /></a>
       </div>
       <div style="flex: 1 1 auto;"></div>
       <div style="flex: 0 0 auto; margin: 5px; display: flex; flex-direction: column;">
