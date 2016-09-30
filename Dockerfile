@@ -34,7 +34,8 @@ ENV ARCADE_BASIC_VER=1.0.7 \
     SVG_SUPPORT_VER=2.2.3.2 \
     WP_MAIL_SMTP_VER=0.9.5 \
     DEBUG_BAR_VER=0.8.4 \
-    IHAF_VER=1.3.3
+    IHAF_VER=1.3.3 \
+    RAW_HTML_VER=1.5
 
 RUN cd /app/wp-content/plugins && \
     curl -otmp.zip https://downloads.wordpress.org/plugin/windows-azure-storage.${AZURE_STORAGE_VER}.zip && \
@@ -53,6 +54,9 @@ RUN cd /app/wp-content/plugins && \
     unzip tmp.zip && \
     rm tmp.zip && \
     curl -otmp.zip https://downloads.wordpress.org/plugin/insert-headers-and-footers.${IHAF_VER}.zip && \
+    unzip tmp.zip && \
+    rm tmp.zip && \
+    curl -otmp.zip https://downloads.wordpress.org/plugin/raw-html.${RAW_HTML_VER}.zip && \
     unzip tmp.zip && \
     rm tmp.zip && \
 
