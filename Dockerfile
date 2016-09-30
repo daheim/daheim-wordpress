@@ -1,7 +1,7 @@
 FROM tutum/apache-php:latest
 MAINTAINER Gergo Ertli <egergo@gmail.com>
 
-ENV WORDPRESS_VER=4.5.2 \
+ENV WORDPRESS_VER=4.6.1 \
     DB_HOST="**LinkMe**" \
     DB_PORT="**LinkMe**" \
     DB_NAME=wordpress \
