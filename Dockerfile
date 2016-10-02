@@ -67,6 +67,7 @@ RUN cd /app/wp-content/plugins && \
     rm tmp.zip
 
 COPY daheim /app/wp-content/themes/daheim
+COPY daheim-unicorns /app/wp-content/themes/daheim-unicorns
 COPY wordpress.conf \
      wp-config.php \
      run.sh \
