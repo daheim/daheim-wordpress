@@ -604,8 +604,8 @@ ul {
 
 #content_2{
   height: auto;
-  margin-top: 144px;
-  margin-bottom: 108px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   overflow: hidden;
 }
 .illu_slot{
@@ -731,12 +731,7 @@ footer{
   width: 1177px;
   max-width: 95%;
 }
-.footer_cloum{
-  float: left;
-  height: 366px;
-  max-width: 365px;
-  width: 31%;
-}
+
 #impress{
   margin-right: 3%;
 }
@@ -763,8 +758,8 @@ footer{
   height: auto;
 }
 
-.footer_colum_wrapper{
-  clear: left;
+.footer_colum_wrapper > div {
+  margin: 10px;
 }
 
 #partner{
@@ -907,7 +902,7 @@ fieldset .iframe-donations-controller .iframe-donations-fieldset{
 */
 /*-----------------------------------------------------------------------------
 */
-@media only screen and (max-height: 600px) {
+@media only screen and (max-height: 700px) {
   #login-menu{
     display: none;
   }
@@ -923,27 +918,14 @@ fieldset .iframe-donations-controller .iframe-donations-fieldset{
   #logo img{
     height: 40px !important;
   }
-/*  #logo{
-    margin-right: 397px;
-  }*/
+
   #content_flex_cloumn {
     height: 230px;
   }
+
   h1{
     color: rgba(50,50,50,1);
   }
-/*  #content_1a{
-    margin-bottom: 110px;
-  }
-  #content_2{
-    margin-top: 334px;
-  }
-  .content_unterseite{
-    margin-top: 144px;
-  }
-  #header_back{
-    height: 100px;
-  }*/
 
   .hero-always-show {
     padding-top: 0;
@@ -955,6 +937,7 @@ fieldset .iframe-donations-controller .iframe-donations-fieldset{
 
   #content_1a {
     margin-bottom: 0 !important;
+    padding-top: 0;
   }
 
   .menu-popup-container {
@@ -963,15 +946,11 @@ fieldset .iframe-donations-controller .iframe-donations-fieldset{
 }
 
 @media only screen and (max-width: 1000px) {
-  #logo_1{
-    display:none;
+  #logo_1 {
+    display: none;
   }
-  #logo_2{
-    display:block;
-  }
-
-  #logo img{
-    width: 195.624px;
+  #logo_2 {
+    display: block;
   }
 
   .small-top-menu {
@@ -984,362 +963,15 @@ fieldset .iframe-donations-controller .iframe-donations-fieldset{
 
   #content_1a {
     font-size: 12px;
+    padding-top: 0;
+  }
+
+  #header {
+    margin: 12px;
+    padding: 0;
+  }
+
+  #logo img {
+    height: 40px !important;
   }
 }
-
-/*-----------------------------------------------------------------------------
-*/
-/*@media only screen and (max-height: 650px) {
-  .menu_small{
-    font-family: 'Rambla', sans-serif;
-    font-weight: 700;
-    font-size: 1.333em;
-    display: block;
-    margin: 15px 0px 15px 0px;
-    text-align: center;
-  }
-  #wrappermenu{
-    top: 24%;
-    height: 66%;
-  }
-
-}*/
-
-/*-----------------------------------------------------------------------------
-*/
-/*@media only screen and (min-width: 1246px) {
-  footer {
-    position:relative;
-    margin-left: -588.5px;
-    left: 50%;
-  }
-}*/
-/*-----------------------------------------------------------------------------
-*/
-/*@media only screen and (max-width: 1000px) {
-  #wrapper{
-    overflow-x: hidden;
-  }
-
-  .top{
-    position: fixed;
-    right: 3%;
-  }
-  #logo{
-    position: fixed;
-    left: 3%;
-    margin-right: 0px;
-
-  }
-  #wrappermenu{
-
-    width: 94%;
-    margin-left: -47%;
-    left: 50%;
-  }
-  #close{
-    left: 90%;
-  }
-
-
-
-  #content_2{
-    overflow: hidden;
-    width: 94%;
-    margin-left: -47%;
-    position: relative;
-    left: 50%;
-  }
-
-  .content_unterseite{
-    margin-top: 144px !important;
-  }
-  .content_Kontakt{
-    margin-top: 0px !important;
-    padding-top: 144px !important;
-  }
-
-  #content_3{
-    overflow: hidden;
-    width: 94%;
-    margin-left: -47%;
-    position: relative;
-    left: 50%;
-  }
-
-  .connect{
-    width: 32%;
-    height: 308px;
-    margin-right: 2%;
-  }
-
-  #content_4{
-    width: 94%;
-    margin-left: -47%;
-    position: relative;
-    left: 50%;
-  }
-  .about_frontp{
-    width: 45%;
-  }
-  .about_frontp img{
-    width: 100%
-  }
-
-  footer {
-    margin: 0px auto 36px auto;
-    overflow: hidden;
-    width: 1177px;
-    max-width: 96%;
-  }
-  .kontakt_wrapper{
-    float: left;
-    margin: 0px 10% 72px 0px;
-  }
-}*/
-/*-----------------------------------------------------------------------------
-*/
-/*@media only screen and (max-width: 920px) {
-  .about_frontp{
-    height: 360px;
-  }
-  .about_unders{
-    height: 269px;
-  }
-  .footer_cloum{
-    min-width: 188px;
-  }
-  #sidemap{
-    min-width: 126px;
-  }
-  #content_1a{
-    width: 90%;
-  }
-  #content_1b{
-    position: relative;
-    width: 90%;
-    margin-left: -45%;
-    left: 50%;
-  }
-  #content_1c{
-    position: relative;
-    margin-left: -243.5px;
-    left: 50%;
-  }
-}*/
-/*-----------------------------------------------------------------------------
-*/
-/*@media only screen and (max-width: 835px) {
-  .connect {
-    height: 330px;
-  }
-  #content_flex_cloumn {
-    height: 287px;
-  }
-  h1{
-    color: rgba(50,50,50,1);
-  }
-  #content_1a{
-    margin-bottom: 110px;
-  }
-  #content_2{
-    margin-top: 334px;
-  }
-}*/
-  /*-----------------------------------------------------------------------------
-  */
-/*@media only screen and (max-width: 725px) {
-  #mitmachen{
-    display: none;
-  }
-  .illu_slot{
-    clear: left;
-    position: relative;
-    margin-left: -144px !important;
-    left: 50%;
-  }
-  .connect{
-    width: 100%;
-    height: auto;
-    clear: left;
-    margin-left: 1.5% !important;
-  }
-  .about_frontp{
-    clear: left;
-    width: 80%;
-    height: auto;
-    margin-left: -40%;
-    position: relative;
-    left:50%;
-  }
-  .kontakt_wrapper:nth-of-type(3n+3){
-    margin: 0px 10% 72px 0px;
-  }
-  .kontakt_wrapper:nth-of-type(2n+2){
-    margin: 0px 0px 72px 0px;
-  }
-}*/
-/*-----------------------------------------------------------------------------
-*/
-/*@media only screen and (max-width: 625px) {
-  .menu_small{
-    font-family: 'Rambla', sans-serif;
-    font-weight: 700;
-    font-size: 1.333em;
-    display: block;
-    margin: 15px 0px 15px 0px;
-    text-align: center;
-  }
-
-  #logo img{
-    height: 90.81px;
-    height: auto;
-  }
-  #login-menu{
-    display: none;
-  }
-  .top div:nth-of-type(3){
-    padding-right: 0px !important;
-  }
-  .footer_cloum{
-    clear:left;
-    height: auto;
-    margin-bottom: 36px;
-    width: 80%;
-    margin-left: -40%;
-    position: relative;
-    left:50%;
-  }
-  .kontakt_wrapper{
-    margin: 0px 25% 72px 0px;
-  }
-
-  .kontakt_wrapper:nth-of-type(3n+3){
-    margin: 0px 25% 72px 0px;
-  }
-
-  .kontakt_wrapper:nth-of-type(2n+2){
-    margin: 0px 0px 72px 0px;
-  }
-}
-#betterplace_donation_iframe{
-  left: 0%;
-  margin-left: 0px;
-}*/
-
-/*-----------------------------------------------------------------------------
-*/
-/*@media only screen and (max-width: 520px) {
-
-  #titel{
-    display: none;
-  }
-  #content_1 {
-    position: relative;
-    width: 100%;
-    top: 150px;
-    display: block;
-    height: auto;
-  }
-  #content_flex_cloumn {
-    display: block;
-    height: auto;
-    margin: 0 auto 144px auto;
-  }
-  #content_1a h2{
-    display: none;
-    margin-bottom: 22px;
-  }
-  #content_1a{
-    margin-bottom: 22px;
-  }
-  #content_1a h3{
-    color: rgba(50,50,50,1);
-    display: block;
-  }
-  #content_1b{
-    position: relative;
-    top: 0px;
-    left: 50%;
-    margin-left: -45%;
-    margin-top: 6%;
-    margin-bottom: 36px;
-  }
-  h1{
-    text-align: center;
-  }
-  #content_1c{
-    position: relative;
-    top:0px;
-    width: 80%;
-    margin-left: -40%;
-    left: 50%;
-  }
-  .zugang_main{
-    position: relative;
-    margin-bottom: 15px;
-    width: 100%;
-    height: auto;
-    clear: left;
-  }
-  #content_2{
-    margin-top: 101px;
-  }
-  #logo img{
-    height: 65.971px;
-  }
-  .menu_top p, .menu_top a{
-    color: rgba(50,50,50,1);
-  }
-  .menu_top{
-    padding-top: 39px;
-  }
-  .menu_top a #hifle {
-    display: none;
-  }
-  .button_main{
-    width: 98%;
-  }
-  .kontakt_wrapper{
-    clear: left;
-    margin-left: -89.0085px !important;
-    width: auto;
-    position: relative;
-    left: 50%;
-  }
-
-}*/
-/*@media only screen and (max-width: 320px) {
-
-  #logo_1{
-    display:none;
-  }
-  #logo_2{
-    display:block;
-  }
-
-  #logo img{
-    width: 195.624px;
-  }
-
-  .menu_top p, .menu_top a{
-    color: rgba(50,50,50,1);
-  }
-  .menu_top{
-    padding-top: 39px;
-  }
-
-  .footer_cloum{
-    width: 96%;
-    margin-left: -48%;
-  }
-  .job_list{
-    margin-left: 15px;
-  }
-  .text_list{
-    margin-left: 15px;
-  }
-  .job_info{
-    margin-left: 36px;
-  }
-}*/
