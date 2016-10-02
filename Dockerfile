@@ -11,6 +11,7 @@ ENV WORDPRESS_VER=4.6.1 \
 RUN cd /tmp && \
     curl -s https://download.newrelic.com/548C16BF.gpg | apt-key add - && \
     echo "deb http://apt.newrelic.com/debian/ newrelic non-free" > /etc/apt/sources.list.d/newrelic.list && \
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 16126D3A3E5C1192 && \
     apt-get update && \
     apt-get -yq install mysql-client curl unzip newrelic-php5 && \
     newrelic-install install && \
