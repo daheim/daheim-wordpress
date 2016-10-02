@@ -8,7 +8,7 @@
     <div class="hero-content">
 
       <div id="content_1a" class="hero-always-show">
-        <h2 id="title-text" class="w_c">»Zitat das sich gewaschen hat und die Besucher Emotional packt.«</h2>
+        <h2 id="title-text" class="w_c">Reden kann jeder.<br />Fangen wir an!</h2>
       </div>
 
       <div id="content_1b">
