@@ -969,7 +969,7 @@ fieldset .iframe-donations-controller .iframe-donations-fieldset{
 */
 /*-----------------------------------------------------------------------------
 */
-@media only screen and (max-height: 700px) {
+@media only screen and (max-height: 620px) {
   #login-menu{
     display: none;
   }
