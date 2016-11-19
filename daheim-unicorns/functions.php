@@ -9,6 +9,9 @@ add_shortcode('dhm_feature', 'dhm_feature_func');
 add_shortcode('dhm_awesome_person', 'dhm_shortcode_awesome_person');
 add_shortcode('dhm_sitemap', 'dhm_shortcode_sitemap');
 
+add_action( 'wp_head', 'kb_load_open_graph' );
+
+
 function register_menues () {
   register_nav_menus(
     array(
@@ -103,4 +106,19 @@ function dhm_shortcode_sitemap($atts) {
     'container' => false,
     'echo' => false
   ));
+}
+
+/**
+ * @src https://blog.kulturbanause.de/2015/01/open-graph-in-wordpress-verwenden/
+ */
+function kb_load_open_graph() {
+
+	// Standard-Grafik für Seiten ohne Beitragsbild
+	$kb_site_logo = get_stylesheet_directory_uri() . '/img/Daheim_Logo_V1_ohne_RGB.png';
+
+	echo '<meta property="og:type"  content="website" />';
+	echo '<meta property="og:url"   content="' . get_bloginfo( 'url' ) . '" />';
+	echo '<meta property="og:title" content="' . esc_attr( get_bloginfo( 'name' ) ) . '" />';
+	echo '<meta property="og:image" content="' . $kb_site_logo . '" />';
+	echo '<meta property="og:description" content="' . esc_attr( get_bloginfo( 'description' ) ) . '" />';
 }
